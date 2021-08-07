@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS logs;
 
 CREATE TABLE IF NOT EXISTS logs.internal_logs (
-    `time` DateTime DEFAULT now(),
+    `time` DateTime64 DEFAULT now(),
     `date` Date DEFAULT now(),
     `nsec` UInt64,
     `namespace` String,
